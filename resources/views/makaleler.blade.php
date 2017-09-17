@@ -1,6 +1,8 @@
 @extends('master')
 
 @section('icerik')
+    <h2>Makaleler</h2>
+    <hr>
     @if(!$makaleler->isEmpty())
         @foreach($makaleler as $makale)
             <div style="margin-bottom:2rem; border-bottom:1px solid #eee;">
