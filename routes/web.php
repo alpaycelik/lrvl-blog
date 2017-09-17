@@ -16,7 +16,7 @@
 });*/
 
 Route::get('/', 'MakaleController@index');
-Route::get('makale/{id}', 'MakaleController@makaleDetay');
+Route::get('makale/{slug}', 'MakaleController@makaleDetay');
 Route::get('makale-ekle', 'MakaleController@yeniMakale');
 Route::post('makale-ekle', 'MakaleController@makaleEkle');
 

@@ -15,7 +15,7 @@
     @if(!$makaleler->isEmpty())
         @foreach($makaleler as $makale)
             <div>
-                <a href="{{ action('MakaleController@makaleDetay', $makale->id) }}">{{ $makale->baslik }}</a>
+                <a href="{{ action('MakaleController@makaleDetay', $makale->slug) }}">{{ $makale->baslik }}</a>
             </div>
         @endforeach
     @else
