@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('makale-ekle', 'MakaleController@yeniMakale');
+Route::post('makale-ekle', 'MakaleController@makaleEkle');
