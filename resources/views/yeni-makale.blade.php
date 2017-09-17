@@ -10,13 +10,7 @@
 </head>
 <body>
 <div class="container">
-    @if($errors->any())
-         <div class="alert alert-danger">
-            @foreach($errors->all() as $message)
-                <li>{{ $message }}</li>
-            @endforeach
-         </div>
-    @endif
+    @include('_flash');
     <form action="{{ action('MakaleController@makaleEkle') }}" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="form-group">
