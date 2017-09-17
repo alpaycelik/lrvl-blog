@@ -1,8 +1,6 @@
 @extends('master')
 
 @section('icerik')
-    <h2>Makale Düzenle</h2>
-    <hr>
     <form action="{{ action('MakaleController@makaleGuncelle', $makale->id) }}" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="form-group">
